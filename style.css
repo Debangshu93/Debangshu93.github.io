@@ -51,19 +51,21 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Sidebar and Main Content */
+/* Centering the Layout */
 .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  /* Center the entire content */
+    gap: 20px;  /* Add space between sidebar and main content */
     margin: 20px auto;
     padding: 20px;
-    width: 85%;
-    max-width: 1200px;
+    max-width: 1200px;  /* Limit the width for readability */
+    width: 100%;
+    box-sizing: border-box;  /* Ensure padding is included in width */
 }
 
 /* Sidebar Styling */
 .sidebar {
-    width: 20%;
+    width: 20%;  /* Sidebar takes 20% of the content */
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
@@ -79,7 +81,7 @@ nav ul li a:hover {
 
 .sidebar img {
     width: 100%;
-    max-width: 150px;  /* Set max width */
+    max-width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -108,7 +110,7 @@ nav ul li a:hover {
 
 /* Main Content Section Styling */
 .intro {
-    width: 60%;
+    width: 55%;  /* Adjust width for main content */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -117,7 +119,7 @@ nav ul li a:hover {
 
 /* Right-hand Panel for Recommendations */
 .recommendations-panel {
-    width: 15%;
+    width: 20%;  /* Right panel also takes 20% */
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
@@ -149,16 +151,15 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-
-/* Publications Section Styling with Border */
+/* Publications Section */
 .publications-section {
-    margin: 0 auto 40px auto;  /* Center the section */
+    margin: 0 auto 40px auto;
     padding: 20px;
-    max-width: 790px;          /* Set a maximum width */
-    border: 2px solid #ddd;    /* Adds a subtle border */
-    border-radius: 10px;       /* Rounds the corners */
-    background-color: #ffffff; /* White background for clarity */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Slight shadow for depth */
+    max-width: 800px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .publications-section h2 {
@@ -195,7 +196,6 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
-
 /* Footer Styling */
 footer {
     background-color: #002855;
@@ -212,10 +212,11 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
+        align-items: center;
         width: 95%;
     }
 
@@ -226,10 +227,18 @@ footer p {
 
     .sidebar img {
         width: 120px;
+        margin: 0 auto;
     }
 
     .recommendations-panel {
         position: relative;
         right: 0;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .publications-section {
+        max-width: 100%;
+        box-shadow: none;
     }
 }
