@@ -14,6 +14,142 @@ body {
     font-size: 16px;
 }
 
+/* Navigation Bar Styling */
+header {
+    background-color: #002855;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffc107;
+    color: #002855;
+    border-radius: 5px;
+}
+
+/* Sidebar and Main Content */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    max-width: 1200px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+    color: #002855;
+    margin-bottom: 20px;
+}
+
+.sidebar img {
+    width: 100%;
+    max-width: 150px;  /* Set max width */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #002855;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* Main Content Section Styling */
+.intro {
+    width: 60%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Right-hand Panel for Recommendations */
+.recommendations-panel {
+    width: 15%;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    position: fixed;
+    right: 20px;
+    top: 120px;
+}
+
+.recommendations-panel h3 {
+    font-size: 1.3em;
+    color: #002855;
+    margin-bottom: 15px;
+}
+
+.recommendations-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recommendations-panel ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.recommendations-panel ul li strong {
+    color: #002855;
+    font-weight: bold;
+}
+
+
 /* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
@@ -59,139 +195,6 @@ body {
     border-bottom: 2px solid #ffc107;
 }
 
-/* Navigation Bar Styling */
-header {
-    background-color: #002855;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1em;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #ffc107;
-    color: #002855;
-    border-radius: 5px;
-}
-
-/* Sidebar and Main Content */
-.content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    padding: 20px;
-    width: 85%;
-    max-width: 1200px;
-}
-
-/* Sidebar Styling */
-.sidebar {
-    width: 25%;
-    background-color: #f4f7fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.sidebar h3 {
-    font-size: 1.5em;
-    color: #002855;
-    margin-bottom: 20px;
-}
-
-.sidebar img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-    color: #002855;
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
-}
-
-/* Main Content Section Styling */
-.intro {
-    width: 50%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-/* Right-hand Panel for Recommendations */
-.recommendations-panel {
-    width: 20%;
-    background-color: #f4f7fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-size: 0.9em; /* Keep the text small and non-intrusive */
-}
-
-.recommendations-panel h3 {
-    font-size: 1.3em;
-    color: #002855;
-    margin-bottom: 15px;
-}
-
-.recommendations-panel ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.recommendations-panel ul li {
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.recommendations-panel ul li strong {
-    color: #002855;
-    font-weight: bold;
-}
 
 /* Footer Styling */
 footer {
@@ -222,9 +225,11 @@ footer p {
     }
 
     .sidebar img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin: 0 auto;
+        width: 120px;
+    }
+
+    .recommendations-panel {
+        position: relative;
+        right: 0;
     }
 }
