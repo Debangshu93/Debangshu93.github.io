@@ -188,20 +188,6 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
-/* Styling for Favorite Subjects Section */
-.subject-list {
-    list-style-type: square;
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #555;
-}
-
-.subject-list li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
 /* Footer Styling */
 footer {
     background-color: #002855;
