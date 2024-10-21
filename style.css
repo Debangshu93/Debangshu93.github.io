@@ -62,48 +62,47 @@ nav ul li a:hover {
     max-width: 1000px;
 }
 
-/* Sidebar Styling */
-.sidebar {
-    width: 25%;
-    background-color: #f4f7fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* Side Panel Styling */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #002855;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
 }
 
-.sidebar h3 {
-    font-size: 1.5em;
-    color: #002855;
-    margin-bottom: 20px;
+.side-panel h2 {
+    color: #ffc107;
+    padding-left: 20px;
 }
 
-.sidebar img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.side-panel ul {
+    padding-left: 20px;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
+.side-panel ul li {
     margin-bottom: 10px;
 }
 
-.sidebar ul li a {
-    color: #002855;
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+.side-panel ul li strong {
+    color: #ffc107;
 }
 
-.sidebar ul li a:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 /* Main Content Section Styling */
@@ -114,119 +113,6 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
-/* Publications Section Styling with Border */
-.publications-section {
-    margin: 0 auto 40px auto;  /* Center the section */
-    padding: 20px;
-    max-width: 790px;          /* Set a maximum width */
-    border: 2px solid #ddd;    /* Adds a subtle border */
-    border-radius: 10px;       /* Rounds the corners */
-    background-color: #ffffff; /* White background for clarity */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Slight shadow for depth */
-}
-
-.publications-section h2 {
-    font-size: 2.0em;
-    color: #002855;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 10px;
-}
-
-.publication-item {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-
-.publication-item p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.8;
-}
-
-.publication-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #002855;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.publication-link:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
-}
-
-/* Side Panel Styling */
-.side-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 100%;
-    background-color: #002855;
-    color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.3s;
-    z-index: 1000;
-    padding-top: 20px;
-}
-
-.side-panel h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    border-bottom: 2px solid #ffc107;
-}
-
-.panel-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.panel-content ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.panel-content ul li {
-    margin-bottom: 10px;
-}
-
-.panel-content ul li strong {
-    color: #ffc107;
-}
-
-.panel-content ul li {
-    font-size: 1.1em;
-}
-
-.toggle-btn {
-    position: absolute;
-    top: 20px;
-    right: -40px;
-    background-color: #002855;
-    color: #fff;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 0 5px 5px 0;
-}
-
-/* Main content adjustment when panel is toggled */
-main {
-    margin-left: 50px; /* Default margin when panel is minimized */
-    transition: 0.3s;
-}
-
-.side-panel.open + main {
-    margin-left: 250px; /* Adjust main content margin when panel is open */
-}
-
 
 /* Footer Styling */
 footer {
