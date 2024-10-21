@@ -1,4 +1,4 @@
-/* General styles */
+/* General Reset and Basic Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +6,31 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Georgia', 'Times New Roman', serif; /* Professional serif font */
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
     padding-bottom: 60px;
+    font-size: 16px;
 }
 
-/* Header styles */
+/* Header Styling */
 header {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #002855;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.2em;
+    font-size: 2.8em;
+    font-weight: bold;
 }
 
 header nav ul {
     list-style-type: none;
-    padding: 10px 0;
+    margin-top: 10px;
 }
 
 header nav ul li {
@@ -37,83 +39,116 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffc107;
+    color: #ffffff;
+    font-weight: 500;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #ffc107; /* Academic gold color */
 }
 
-/* Section styles */
+/* Section Styling */
 section {
-    padding: 50px;
-    margin: 20px auto;
-    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    width: 85%;
     max-width: 1000px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.intro h2, .about h2, .cv h2, .contact h2 {
-    font-size: 2em;
-    color: #007bff;
-    margin-bottom: 10px;
+h2 {
+    font-size: 2.2em;
+    color: #002855;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 10px;
 }
 
-.intro p, .about p, .cv p, .contact p {
+p {
     font-size: 1.1em;
     color: #555;
     margin-bottom: 20px;
-    text-align: center;
+    line-height: 1.8;
 }
 
-/* Buttons */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #333;
+}
+
+/* Links */
+a {
+    color: #002855;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* Button Styling */
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #002855;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #004a9f;
 }
 
-/* Footer styles */
+/* Footer Styling */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #002855;
+    color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 3px solid #ffc107;
+    font-size: 0.9em;
 }
 
-/* Contact Section */
-.contact a {
-    color: #007bff;
-    text-decoration: none;
+footer p {
+    margin: 0;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+/* Publication List */
+.publications ul, .technical-reports ul, .projects ul {
+    padding-left: 20px;
+}
+
+.publications li, .technical-reports li, .projects li {
+    margin-bottom: 20px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     section {
-        width: 90%;
+        width: 95%;
         padding: 30px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
     }
 
     header nav ul li {
@@ -123,5 +158,9 @@ footer {
 
     header nav ul li a {
         font-size: 1.3em;
+    }
+
+    footer {
+        font-size: 0.8em;
     }
 }
