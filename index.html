@@ -20,24 +20,6 @@
         </nav>
     </header>
 
-    <!-- Toggled Side Panel -->
-    <div id="side-panel" class="side-panel">
-        <div id="panel-content" class="panel-content">
-            <h2>Favorite Subjects</h2>
-            <ul>
-                <li><strong>Reinforcement Learning</strong> - *Sutton & Barto: Reinforcement Learning: An Introduction*</li>
-                <li><strong>Bandit Algorithms</strong> - *Lattimore & Szepesvári: Bandit Algorithms*</li>
-                <li><strong>Markov Decision Processes (MDPs)</strong> - *Puterman: Markov Decision Processes: Discrete Stochastic Dynamic Programming*</li>
-                <li><strong>Uncertainty in AI</strong> - *Russell & Norvig: Artificial Intelligence: A Modern Approach*</li>
-                <li><strong>Data-driven Learning Models</strong> - *Goodfellow et al.: Deep Learning*</li>
-                <li><strong>Optimization and Control</strong> - *Boyd & Vandenberghe: Convex Optimization*</li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- Always visible toggle button -->
-    <button class="toggle-btn" onclick="toggleSidePanel()">☰</button>
-
     <div class="content-wrapper">
         <!-- Sidebar Section -->
         <aside class="sidebar">
@@ -59,24 +41,23 @@
             I completed my Masters in Systems Science and Automation at IISc under <a href="https://www.csa.iisc.ac.in/~shalabh/" target="_blank">Professor Shalabh Bhatnagar</a>, specializing in Reinforcement Learning. During my brief but intense stint at <a href="https://events.csa.iisc.ac.in/open-day-2019/events/keynote-alphaics.html" target="_blank">AlphaICs</a>, I worked on Deep Learning Compiler systems. I hold a Bachelor's degree in Chemical Engineering from Jadavpur University, Kolkata. I am passionate about foundational understanding of modern data-centric learning systems and their real-world applications.
             </p>
         </section>
+
+        <!-- Right-hand Panel for Recommended Subjects -->
+        <aside class="recommendations-panel">
+            <h3>Recommended Reading</h3>
+            <ul>
+                <li><strong>Reinforcement Learning</strong> - <em>Sutton & Barto: Reinforcement Learning: An Introduction</em></li>
+                <li><strong>Bandit Algorithms</strong> - <em>Lattimore & Szepesvári: Bandit Algorithms</em></li>
+                <li><strong>Markov Decision Processes (MDPs)</strong> - <em>Puterman: Markov Decision Processes</em></li>
+                <li><strong>Uncertainty in AI</strong> - <em>Russell & Norvig: Artificial Intelligence: A Modern Approach</em></li>
+                <li><strong>Data-driven Learning Models</strong> - <em>Goodfellow et al.: Deep Learning</em></li>
+                <li><strong>Optimization and Control</strong> - <em>Boyd & Vandenberghe: Convex Optimization</em></li>
+            </ul>
+        </aside>
     </div>
 
     <footer>
         <p>&copy; 2024 Debangshu Banerjee</p>
     </footer>
-
-    <script>
-        function toggleSidePanel() {
-            var panel = document.getElementById("side-panel");
-            var content = document.getElementById("panel-content");
-            if (panel.style.width === "250px") {
-                panel.style.width = "0";
-                content.style.display = "none";
-            } else {
-                panel.style.width = "250px";
-                content.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
