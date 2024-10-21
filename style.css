@@ -52,9 +52,21 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Centering the Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensure space between sidebar, main content, and panel */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;  /* Control the maximum width for desktop */
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* Sidebar Styling */
 .sidebar {
-    width: 20%;
+    flex: 1;  /* Allow the sidebar to take up a portion of the width */
+    max-width: 250px;  /* Ensure sidebar is not too wide */
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
@@ -70,7 +82,7 @@ nav ul li a:hover {
 
 .sidebar img {
     width: 100%;
-    max-width: 150px;
+    max-width: 150px;  /* Control image size */
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -99,7 +111,7 @@ nav ul li a:hover {
 
 /* Main Content Section Styling */
 .intro {
-    width: 55%;
+    flex: 2;  /* Main content takes more space */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -108,15 +120,14 @@ nav ul li a:hover {
 
 /* Right-hand Panel for Recommendations */
 .recommendations-panel {
-    width: 20%;
+    flex: 1;  /* The right panel takes up a smaller portion */
+    max-width: 250px;  /* Control width */
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 0.9em;
-    position: fixed;
-    right: 5%;  /* Moved closer to the content */
-    top: 120px;
+    margin-left: 20px;  /* Ensure there's space between main content and the panel */
 }
 
 .recommendations-panel h3 {
@@ -159,7 +170,7 @@ footer p {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column;
+        flex-direction: column;  /* Stack elements vertically on mobile */
         align-items: center;
         width: 95%;
     }
@@ -181,6 +192,7 @@ footer p {
         box-shadow: none;
     }
 
+    /* Stacking the Navigation Bar for Mobile */
     nav ul {
         flex-direction: column;
         align-items: center;
