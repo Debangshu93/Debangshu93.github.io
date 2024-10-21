@@ -16,11 +16,11 @@
                 <li><a href="publications.html">Publications & Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                
             </ul>
         </nav>
     </header>
 
+    <!-- Toggled Side Panel -->
     <div id="side-panel" class="side-panel">
         <button class="toggle-btn" onclick="toggleSidePanel()">☰</button>
         <div id="panel-content" class="panel-content">
@@ -51,12 +51,11 @@
         <!-- Main Content Section -->
         <section class="intro">
             <h2>Hello, I'm Debangshu!</h2>
-            <p>I am Debangshu Banerjee, currently pursuing my PhD at the Indian Institute of Science (IISc) adivised by <a href = "https://ece.iisc.ac.in/~aditya/" target = "_blank">Professor Aditya Gopalan</a>.
-                I am also a Student Researcher at <a href = "https://deepmind.google/" target = "_blank">Google DeepMind</a> hosted by <a href = "https://sites.google.com/corp/view/karthikeyan-shanmugam" target = "_blank">Dr. Karthikeyan Shanmugan</a>. I have previously worked as a Research Intern at <a href = "https://research.ibm.com/labs/india" target = "_blank">IBM Research Lab</a>. 
-                My interests spans from general Machine Learning, Statistical Learning Theory, Online Learning, Reinforcement Learning to Large Language Model Alignment, Retrieval-Augmented Generation and Optimizing Computer Systems. 
-                Previously I pursued my Masters in Systems Science and Automation from IISc under <a href = "https://www.csa.iisc.ac.in/~shalabh/", target = "_blank">Professor Shalabh Bhatnagar</a> with a specialization in Reinforcememtn Learning. I have been fortunate enough to work on Deep Learning Compiler systems during my brief but intense stint at <a href = "https://events.csa.iisc.ac.in/open-day-2019/events/keynote-alphaics.html" target = "_blank">AlphaICs</a>. I hold a Bachelors degree in Chemical Engineering from Jadavpur University, Kolkata.
-                I am passionate about the foundational understanding of modern data-scentric learning systems along with their application and challenges in solving real-world problems.
-        </p>
+            <p>I am Debangshu Banerjee, currently pursuing my PhD at the Indian Institute of Science (IISc) advised by <a href="https://ece.iisc.ac.in/~aditya/" target="_blank">Professor Aditya Gopalan</a>.
+            I am also a Student Researcher at <a href="https://deepmind.google/" target="_blank">Google DeepMind</a> hosted by <a href="https://sites.google.com/corp/view/karthikeyan-shanmugam" target="_blank">Dr. Karthikeyan Shanmugam</a>. I have previously worked as a Research Intern at <a href="https://research.ibm.com/labs/india" target="_blank">IBM Research Lab</a>. 
+            My interests span general Machine Learning, Statistical Learning Theory, Online Learning, Reinforcement Learning, Large Language Model Alignment, Retrieval-Augmented Generation, and Optimizing Computer Systems. 
+            I completed my Masters in Systems Science and Automation at IISc under <a href="https://www.csa.iisc.ac.in/~shalabh/" target="_blank">Professor Shalabh Bhatnagar</a>, specializing in Reinforcement Learning. During my brief but intense stint at <a href="https://events.csa.iisc.ac.in/open-day-2019/events/keynote-alphaics.html" target="_blank">AlphaICs</a>, I worked on Deep Learning Compiler systems. I hold a Bachelor's degree in Chemical Engineering from Jadavpur University, Kolkata. I am passionate about foundational understanding of modern data-centric learning systems and their real-world applications.
+            </p>
         </section>
     </div>
 
@@ -68,11 +67,11 @@
         function toggleSidePanel() {
             var panel = document.getElementById("side-panel");
             var content = document.getElementById("panel-content");
-            if (panel.style.width === "250px") {
-                panel.style.width = "50px";
+            if (panel.style.width === "300px") {
+                panel.style.width = "0";
                 content.style.display = "none";
             } else {
-                panel.style.width = "250px";
+                panel.style.width = "300px";
                 content.style.display = "block";
             }
         }
