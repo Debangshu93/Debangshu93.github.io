@@ -53,9 +53,7 @@ nav ul li a:hover {
 
 /* Sidebar and Main Content */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: block; /* Ensures sections are stacked vertically */
     margin: 20px auto;
     padding: 20px;
     width: 85%;
@@ -64,12 +62,13 @@ nav ul li a:hover {
 
 /* Sidebar Styling */
 .sidebar {
-    width: 25%;
+    width: 100%; /* Full width in mobile and desktop */
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px; /* Ensures spacing between sidebar and content */
 }
 
 .sidebar h3 {
@@ -79,7 +78,7 @@ nav ul li a:hover {
 }
 
 .sidebar img {
-    width: 100%;
+    width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -108,11 +107,12 @@ nav ul li a:hover {
 
 /* Main Content Section Styling */
 .intro {
-    width: 70%;
+    width: 100%; /* Full width to stack content properly */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
 /* News Section */
@@ -207,19 +207,7 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .content-wrapper {
-        flex-direction: column;
         width: 95%;
-    }
-
-    .sidebar, .intro {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
     }
 
     .sidebar img {
