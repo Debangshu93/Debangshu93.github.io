@@ -14,6 +14,47 @@ body {
     font-size: 16px;
 }
 
+/* Section Styling */
+.publications-section {
+    margin-bottom: 40px;
+}
+
+.publications-section h2 {
+    font-size: 2.0em;
+    color: #002855;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 10px;
+}
+
+.publication-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.publication-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.publication-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #002855;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.publication-link:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+}
+
+
 /* Navigation Bar Styling */
 header {
     background-color: #002855;
