@@ -1,91 +1,46 @@
-/* General Reset and Basic Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Georgia', 'Times New Roman', serif; /* Professional serif font */
-    background-color: #f4f7fa;
-    color: #333;
-    line-height: 1.6;
-    padding-bottom: 60px;
-    font-size: 16px;
-}
-
-/* Header Styling */
-header {
-    background-color: #002855;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.8em;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 30px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid #ffc107; /* Academic gold color */
-}
-
-/* Section Styling */
-section {
-    margin: 50px auto;
-    padding: 40px;
+/* Content Wrapper to hold sidebar and main content */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 20px;
     width: 85%;
     max-width: 1000px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-h2 {
-    font-size: 2.2em;
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
     color: #002855;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 10px;
 }
 
-p {
-    font-size: 1.1em;
-    color: #555;
+.sidebar img {
+    width: 100%;
+    border-radius: 50%;
     margin-bottom: 20px;
-    line-height: 1.8;
 }
 
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-    color: #333;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Links */
-a {
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
     color: #002855;
     text-decoration: none;
     font-weight: 500;
@@ -93,74 +48,35 @@ a {
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-a:hover {
+.sidebar ul li a:hover {
     color: #ffc107;
     border-bottom: 2px solid #ffc107;
 }
 
-/* Button Styling */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #002855;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
+/* Main Content Section Styling */
+.intro {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.btn:hover {
-    background-color: #004a9f;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #002855;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Publication List */
-.publications ul, .technical-reports ul, .projects ul {
-    padding-left: 20px;
-}
-
-.publications li, .technical-reports li, .projects li {
-    margin-bottom: 20px;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    section {
+    .content-wrapper {
+        flex-direction: column;
         width: 95%;
-        padding: 30px;
     }
 
-    header h1 {
-        font-size: 2.2em;
+    .sidebar, .intro {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header nav ul li a {
-        font-size: 1.3em;
-    }
-
-    footer {
-        font-size: 0.8em;
+    .sidebar img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin: 0 auto;
     }
 }
