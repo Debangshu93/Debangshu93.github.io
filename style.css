@@ -160,6 +160,74 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
+/* Side Panel Styling */
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #002855;
+    color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.side-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-bottom: 2px solid #ffc107;
+}
+
+.panel-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.panel-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.panel-content ul li {
+    margin-bottom: 10px;
+}
+
+.panel-content ul li strong {
+    color: #ffc107;
+}
+
+.panel-content ul li {
+    font-size: 1.1em;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    background-color: #002855;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Main content adjustment when panel is toggled */
+main {
+    margin-left: 50px; /* Default margin when panel is minimized */
+    transition: 0.3s;
+}
+
+.side-panel.open + main {
+    margin-left: 250px; /* Adjust main content margin when panel is open */
+}
+
+
 /* Footer Styling */
 footer {
     background-color: #002855;
