@@ -51,58 +51,99 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Side Panel Styling */
-.side-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px; /* Ensure the panel is initially visible */
-    background-color: #002855;
-    color: white;
-    transition: 0.3s ease;
-    z-index: 1000;
-    padding-top: 60px;
-    overflow-x: hidden;
+/* Sidebar and Main Content */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    max-width: 1200px;
 }
 
-.side-panel h2 {
-    color: #ffc107;
-    padding-left: 20px;
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.side-panel ul {
-    padding-left: 20px;
+.sidebar h3 {
+    font-size: 1.5em;
+    color: #002855;
+    margin-bottom: 20px;
 }
 
-.side-panel ul li {
+.sidebar img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
     margin-bottom: 10px;
 }
 
-.side-panel ul li strong {
-    color: #ffc107;
+.sidebar ul li a {
+    color: #002855;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Toggle Button */
-.toggle-btn {
-    position: fixed;
-    top: 15px;
-    left: 260px; /* Place the toggle button just outside the panel */
-    font-size: 30px;
-    background-color: #002855;
-    color: white;
-    border: none;
-    cursor: pointer;
-    z-index: 1001; /* Ensure the button is always on top */
+.sidebar ul li a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
 }
 
 /* Main Content Section Styling */
 .intro {
-    width: 70%;
+    width: 50%;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Right-hand Panel for Recommendations */
+.recommendations-panel {
+    width: 20%;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 0.9em; /* Keep the text small and non-intrusive */
+}
+
+.recommendations-panel h3 {
+    font-size: 1.3em;
+    color: #002855;
+    margin-bottom: 15px;
+}
+
+.recommendations-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recommendations-panel ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.recommendations-panel ul li strong {
+    color: #002855;
+    font-weight: bold;
 }
 
 /* Footer Styling */
@@ -128,15 +169,9 @@ footer p {
         width: 95%;
     }
 
-    .sidebar, .intro {
+    .sidebar, .intro, .recommendations-panel {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
     }
 
     .sidebar img {
