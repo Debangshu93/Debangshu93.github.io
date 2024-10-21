@@ -1,4 +1,57 @@
-/* Content Wrapper to hold sidebar and main content */
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+
+/* Navigation Bar Styling */
+header {
+    background-color: #002855;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffc107;
+    color: #002855;
+    border-radius: 5px;
+}
+
+/* Sidebar and Main Content */
 .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -62,6 +115,23 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* Footer Styling */
+footer {
+    background-color: #002855;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
@@ -71,6 +141,12 @@
     .sidebar, .intro {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .sidebar img {
