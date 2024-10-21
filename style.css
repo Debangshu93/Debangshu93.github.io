@@ -79,7 +79,7 @@ nav ul li a:hover {
 
 .sidebar img {
     width: 100%;
-    max-width: 150px;
+    max-width: 150px;  /* Set max width */
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -149,6 +149,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+
 /* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
@@ -211,28 +212,24 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Design Adjustments for Mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
-        align-items: center; /* Center content on smaller screens */
         width: 95%;
     }
 
     .sidebar, .intro, .recommendations-panel {
-        width: 100%; /* Stack everything vertically on small screens */
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .sidebar img {
         width: 120px;
-        margin: 0 auto; /* Center image */
     }
 
     .recommendations-panel {
         position: relative;
         right: 0;
-        top: 0;
-        box-shadow: none; /* Remove shadow for simplicity on mobile */
     }
 }
