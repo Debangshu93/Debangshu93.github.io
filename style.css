@@ -151,18 +151,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #002855;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9em;
-}
-
 /* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
@@ -207,6 +195,20 @@ footer {
     color: #ffc107;
     border-bottom: 2px solid #ffc107;
 }
+
+
+/* Footer Styling */
+footer {
+    background-color: #002855;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
 
 
 footer p {
