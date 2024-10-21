@@ -111,7 +111,7 @@ nav ul li a:hover {
 
 /* Main Content Section Styling */
 .intro {
-    flex: 2;  /* Main content takes more space */
+    flex: 1.5;  /* Main content takes more space */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -127,7 +127,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 0.9em;
-    margin-left: 20px;  /* Ensure there's space between main content and the panel */
+    margin-left: 10px;  /* Ensure there's space between main content and the panel */
 }
 
 .recommendations-panel h3 {
