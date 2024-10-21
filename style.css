@@ -14,9 +14,19 @@ body {
     font-size: 16px;
 }
 
+/* Content Wrapper */
+.content-wrapper {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Section Styling */
 .publications-section {
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Separates each section */
 }
 
 .publications-section h2 {
@@ -30,7 +40,6 @@ body {
 .publication-item {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
 .publication-item p {
@@ -53,6 +62,29 @@ body {
     color: #ffc107;
     border-bottom: 2px solid #ffc107;
 }
+
+/* Styling for Favorite Subjects Section */
+.subject-list {
+    list-style-type: square;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #555;
+}
+
+.subject-list li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #002855;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
 
 
 /* Navigation Bar Styling */
