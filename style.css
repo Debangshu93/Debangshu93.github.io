@@ -149,15 +149,15 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Publications Section */
+/* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
     padding: 20px;
-    max-width: 800px;  /* Limit width for better readability */
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 790px;          /* Set a maximum width */
+    border: 2px solid #ddd;    /* Adds a subtle border */
+    border-radius: 10px;       /* Rounds the corners */
+    background-color: #ffffff; /* White background for clarity */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Slight shadow for depth */
 }
 
 .publications-section h2 {
@@ -194,6 +194,7 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
+
 /* Footer Styling */
 footer {
     background-color: #002855;
@@ -214,29 +215,24 @@ footer p {
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center content on smaller screens */
         width: 95%;
     }
 
-    .sidebar, .intro, .recommendations-panel, .publications-section {
-        width: 100%;
+    .sidebar, .intro, .recommendations-panel {
+        width: 100%; /* Stack everything vertically on small screens */
         margin-bottom: 20px;
     }
 
     .sidebar img {
         width: 120px;
-        margin: 0 auto;
+        margin: 0 auto; /* Center image */
     }
 
     .recommendations-panel {
         position: relative;
         right: 0;
         top: 0;
-        box-shadow: none;
-    }
-
-    .publications-section {
-        max-width: 100%;
-        box-shadow: none;
+        box-shadow: none; /* Remove shadow for simplicity on mobile */
     }
 }
