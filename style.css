@@ -115,93 +115,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* News Section */
-.news-section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.news-section h2 {
-    font-size: 2.0em;
-    color: #002855;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 10px;
-}
-
-.news-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.news-list li {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-    line-height: 1.8;
-}
-
-.news-list strong {
-    color: #002855;
-}
-
-/* Publications Section */
-.publications-section {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-}
-
-.publications-section h2 {
-    font-size: 2.0em;
-    color: #002855;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffc107;
-    padding-bottom: 10px;
-}
-
-.publication-item {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-
-.publication-item p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.8;
-}
-
-.publication-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #002855;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.publication-link:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
-}
-
-/* Styling for Favorite Subjects Section */
-.subject-list {
-    list-style-type: square;
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #555;
-}
-
-.subject-list li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
 /* Footer Styling */
 footer {
     background-color: #002855;
@@ -243,3 +156,48 @@ footer p {
         margin: 0 auto;
     }
 }
+
+/* Publications Section Styling with Border */
+.publications-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;  /* Adds a subtle border */
+    border-radius: 10px;      /* Rounds the corners */
+    background-color: #ffffff; /* White background for clarity */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);  /* Slight shadow for depth */
+}
+
+.publications-section h2 {
+    font-size: 2.0em;
+    color: #002855;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 10px;
+}
+
+.publication-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.publication-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.publication-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #002855;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.publication-link:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+}
+
