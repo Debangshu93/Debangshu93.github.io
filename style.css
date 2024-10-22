@@ -120,39 +120,40 @@ nav ul li a:hover {
 
 /* Right-hand Panel for Recommendations */
 .recommendations-panel {
-    flex: 1;  /* The right panel takes up a smaller portion */
-    max-width: 250px;  /* Control width */
+    flex: 1;
+    max-width: 250px;
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-size: 0.9em;
-    margin-left: 10px;  /* Ensure there's space between main content and the panel */
+    font-size: 0.85em;  /* Make all text smaller */
+    margin-left: 20px;
 }
 
-.recommendations-panel h3 {
-    font-size: 1.3em;
-    color: #002855;
-    margin-bottom: 15px;
-}
-
+/* Topics Styling */
 .recommendations-panel h4 {
-    font-size: 1.2em;
-    color: #002855;  /* Different color to highlight topics */
+    font-size: 1.1em;
+    color: #002855;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+/* Subtle Text for Book Titles in Italics, Authors Normal */
 .recommendations-panel ul li {
-    color: #555;  /* Subtle grey for book titles */
+    color: #555;
     line-height: 1.5;
     margin-bottom: 8px;
 }
 
 .recommendations-panel ul li strong {
-    color: #333;  /* Slightly stronger color for author names */
+    font-style: normal;
+    color: #333;
 }
 
+.recommendations-panel ul li em {
+    font-style: italic;
+    color: #555;
+}
 /* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
