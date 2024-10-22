@@ -53,12 +53,14 @@ nav ul li a:hover {
 }
 
 /* Centering the Layout */
-.content-wrapper {
+..content-wrapper {
     display: flex;
-    justify-content: space-between; /* Ensure space between sidebar, main content, and panel */
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: flex-start;
+    align-items: stretch;    /* Make sections take up full width */
     margin: 20px auto;
     padding: 20px;
-    max-width: 1200px;  /* Control the maximum width for desktop */
+    max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -111,20 +113,21 @@ nav ul li a:hover {
 
 /* Main Content Section Styling */
 .intro {
-    flex: 1.5;  /* Main content takes more space */
+    flex: 1;  /* Main content takes full width in the column layout */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;  /* Add spacing between intro and news */
 }
 
 /* Styling for News Section */
 .news-section {
-    margin-top: 30px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 10px; /* Space between intro and news section */
 }
 
 .news-section h3 {
