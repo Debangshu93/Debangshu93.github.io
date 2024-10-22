@@ -201,8 +201,9 @@ nav ul li a:hover {
 
 /* Abstract Styling: Smaller Text */
 .abstract {
-    font-size: 0.9em;  /* Smaller font size for abstract */
+    font-size: 0.5em;  /* Smaller font size for abstract */
     color: #666;
+    font-style: italic;  /* Italicize the abstract */
     margin-top: 5px;
 }
 
