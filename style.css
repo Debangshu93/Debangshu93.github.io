@@ -199,6 +199,13 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
+/* Abstract Styling: Smaller Text */
+.abstract {
+    font-size: 0.9em;  /* Smaller font size for abstract */
+    color: #666;
+    margin-top: 5px;
+}
+
 
 /* Footer Styling */
 footer {
