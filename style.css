@@ -136,19 +136,21 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-.recommendations-panel ul {
-    list-style-type: none;
-    padding-left: 0;
+.recommendations-panel h4 {
+    font-size: 1.2em;
+    color: #002855;  /* Different color to highlight topics */
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .recommendations-panel ul li {
-    margin-bottom: 10px;
-    line-height: 1.4;
+    color: #555;  /* Subtle grey for book titles */
+    line-height: 1.5;
+    margin-bottom: 8px;
 }
 
 .recommendations-panel ul li strong {
-    color: #002855;
-    font-weight: bold;
+    color: #333;  /* Slightly stronger color for author names */
 }
 
 /* Publications Section Styling with Border */
