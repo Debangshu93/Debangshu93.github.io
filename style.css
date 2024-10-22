@@ -154,6 +154,14 @@ nav ul li a:hover {
     font-style: italic;
     color: #555;
 }
+
+/* Abstract Styling: Smaller Text */
+.abstract {
+    font-size: 0.5em;  /* Smaller font size for abstract */
+    color: #666;
+    font-style: italic;  /* Italicize the abstract */
+    margin-top: 5px;
+}
 /* Publications Section Styling with Border */
 .publications-section {
     margin: 0 auto 40px auto;  /* Center the section */
@@ -199,13 +207,7 @@ nav ul li a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
-/* Abstract Styling: Smaller Text */
-.abstract {
-    font-size: 0.5em;  /* Smaller font size for abstract */
-    color: #666;
-    font-style: italic;  /* Italicize the abstract */
-    margin-top: 5px;
-}
+
 
 
 /* Footer Styling */
