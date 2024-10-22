@@ -161,6 +161,7 @@ nav ul li a:hover {
     color: #666;
     font-style: italic;  /* Italicize the abstract */
     font-family: 'Arial', sans-serif;
+    line-height: 1.0;  /* Tighter line spacing */
     margin-top: 5px;
 }
 /* Publications Section Styling with Border */
