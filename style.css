@@ -121,7 +121,7 @@ nav ul li a:hover {
 /* Right-hand Panel for Recommendations */
 .recommendations-panel {
     flex: 1.2;
-    max-width: 250px;
+    max-width: 300px;
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
